@@ -1,0 +1,52 @@
+﻿@page "/findbook"
+
+<h3>Find a Book</h3>
+
+@* Search fields *@
+<div id="fab-search">
+	<p>Search by...</p>
+
+	<div id="fab-titlesearch">
+		<label>Title: </label>
+		<input type="text"/>
+	</div>
+
+	<div id="fab-authorsearch">
+		<label>Author: </label>
+		<input type="text"/>
+	</div>
+
+	<div id="fab-isbnsearch">
+		<label>ISBN: </label>
+		<input type="text"/>
+	</div>
+</div>
+
+@* Table listing results of the book search *@
+<div id="fab-results">
+	<table>
+		<thead>
+			<tr>
+				<th>ISBN</th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Status</th>
+				<th>Location</th>
+			</tr>
+		</thead>
+		<tbody class="fab-tbody">
+			@*@foreach (var b in bookList)
+				{
+					<tr>
+						<td>@bookList[0]</td etc
+					</tr>
+				}
+			*@
+		</tbody>
+	</table>
+</div>
+
+
+@code {
+
+}

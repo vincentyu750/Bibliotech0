@@ -1,0 +1,47 @@
+﻿@page "/borrow"
+
+<h3>Borrow a Book</h3>
+
+@*
+if logged in, then scanning textfield is available (need to figure out how to 'grey-out'/disable),
+user scans book (type/paste in isbn and press enter),
+confirm y/n,
+	if no then break,
+	if y then book borrow info is added to users account and summarized here (isbn, title, author, date borrowed, date due back)
+*@
+
+<div id="bab-scan">
+	<p>Please scan the book's ISBN barcode</p>
+	<input type="text" />
+</div>
+
+<div id="bab-table">
+	<table>
+		<thead>
+			<tr>
+				<th>ISBN</th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Date Borrowed</th>
+				<th>Date Due</th>
+			</tr>
+		</thead>
+		<tbody class="bab-tbody">
+			@*
+				@foreach (var b in borrowList)
+				{
+					<tr>
+						<td>@borrowList[0]</td> etc.
+					</tr>
+				}
+			*@
+		</tbody>
+	</table>
+</div>
+
+
+
+
+@code {
+
+}

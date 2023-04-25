@@ -1,0 +1,18 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        @*it'd be neat if we could have this say 'Welcome [username/staffname]'*@
+        <div class="top-row px-4">
+            Welcome!
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
