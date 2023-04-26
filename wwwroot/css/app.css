@@ -2,6 +2,7 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4d4519;
 }
 
 h1:focus {
@@ -85,4 +86,89 @@ a, .btn-link {
 
 /* CSS additions start here -zg */
 
+.flex {
+    display: flex;
+}
 
+thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+thead {
+    width: calc(100%-1em);
+}
+
+tbody {
+    height: 220px;
+    display: block;
+    overflow-y: auto;
+    border-top: solid, 1pt, #D9D8C8;
+}
+
+#uac-tbody {
+    height: 500px;
+}
+
+#fab-search,
+#bab-scan,
+#fab-results,
+#bab-table {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.lcol {
+    display: flex;
+    width: 140px;
+    justify-content: right;
+    margin-right: 5px;
+}
+
+.rcol {
+    display: flex;
+    width: 200px;
+    justify-content: left;
+    margin-left: 5px;
+}
+
+#userlogin,
+#stafflogin,
+#fab-search {
+    flex-direction:column;
+}
+
+button {
+    width: 40px;
+    border: solid, 2px, #4d4519;
+    text-align: center;
+}
+
+button .rcol {
+    margin-left: 110px;
+}
+
+h3,
+h4 {
+    color: #655c27;
+}
+
+.block {
+    background-color: #edede1;
+    margin: 10px, 20px, 10px, 20px;
+    padding: 20px;
+    flex-direction: column;
+    width: auto;
+    height: fit-content;
+}
+
+.note {
+    font-style: italic;
+}
+
+.main {
+    flex-direction: column;
+    justify-content: space-between;
+}
