@@ -2,8 +2,66 @@
 
 <h3>Staff Account</h3>
 
+<div class="main flex">
+	@*Logout Button*@
+	<button id="stafflogout" type="submit" class="logout">Log Out</button>
 
+	@*Book Returns*@
+	<div id="sac-bookreturn" class="flex block">
+		<h4>Book Returns</h4>
+		<p>Please scan the book's ISBN barcode</p>
+		@*pressing 'enter' key after entering isbn will execute code defined at bottom, can just use a button if this doesn't work*@
+		<input type="text" @onkeydown="@Enter" />
+	</div>
+
+	@*Create New User*@
+	<div id="sac-create" class="flex block">
+		<h4>Create New User</h4>
+	</div>
+
+	@*Search for User*@
+	<div id="sac-search" class="flex block">
+		<h4>Search Users</h4>
+		@*Search Fields*@
+		<div id="sac-searchfields" class="flex">
+			<p>Search by...</p>
+
+			<div id="sac-searchcard" class="flex">
+				<label id="sac-card" class="lcol">Library Card #: </label>
+				<input type="text" class="rcol" />
+			</div>
+
+			<div id="sac-searchemail" class="flex">
+				<label id="sac-email" class="lcol">Email: </label>
+				<input type="text" class="rcol" />
+			</div>
+		</div>
+		@*Search Results*@
+		<div id="sac-results" class="flex">
+			<table>
+				<thead>
+					<tr>
+						<th>Select</th>
+						<th>Library Card #</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th></th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	</div>
+
+	
+
+</div>
 
 @code {
-
+	public void Enter(KeyboardEventArgs e)
+	{
+		if (e.Code == "Enter" || e.Code == "NumpadEnter")
+		{
+			//stuff to execute for book return scan
+		}
+	}
 }

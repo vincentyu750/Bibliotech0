@@ -12,7 +12,8 @@ confirm y/n,
 
 <div id="bab-scan">
 	<p>Please scan the book's ISBN barcode</p>
-	<input type="text" />
+	@*pressing 'enter' key after entering isbn will execute code defined at bottom, can just use a button if this doesn't work*@
+	<input type="text" @onkeydown="@Enter" />
 </div>
 
 <div id="bab-table">
@@ -43,5 +44,11 @@ confirm y/n,
 
 
 @code {
-
+	public void Enter(KeyboardEventArgs e)
+	{
+		if (e.Code == "Enter" || e.Code == "NumpadEnter")
+		{
+			//stuff to execute for book borrow scan
+		}
+	}
 }

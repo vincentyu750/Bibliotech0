@@ -1,23 +1,28 @@
 ﻿@page "/userlogin"
 
 <h3>User Login</h3>
+<a href="useraccount">Temp link to user account page</a>
 
 @*
 if exception, then clear fields
 if success, then redirect to UserAccount page
 *@
 
-<div id="uli-email">
-	<label>Email: </label>
-	<input type="text" />
+<div id="userlogin" class="flex">
+	<div id="uli-email" class="flex">
+		<label class="lcol">Email: </label>
+		<input class="rcol" type="text" />
+	</div>
+
+	<div id="uli-password" class="flex">
+		<label class="lcol">Password: </label>
+		<input class="rcol" type="text" />
+	</div>
+
+	<button type="submit" class="rcol">Login</button>
 </div>
 
-<div id="uli-password">
-	<label>Password: </label>
-	<input type="text" />
-</div>
 
-<button>Login</button>
 
 @code {
 
