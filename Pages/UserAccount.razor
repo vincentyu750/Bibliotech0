@@ -1,6 +1,68 @@
 ﻿@page "/useraccount"
 
-<h3>UserAccount</h3>
+<h3>User Account</h3>
+
+<div class="main flex">
+	@*Logout Button*@
+	<button id="userlogout" type="submit" class="logout">Log Out</button>
+
+	@*User Account Information*@
+	<div id="uac-info" class="flex block">
+		<h4 class="flex">User Info</h4>
+
+		<div id="uac-card" class="flex">
+			<label class="lcol">Library Card #: </label>
+			<p class="rcol" id="uac-pcard" />
+		</div>
+
+		<div id="uac-name" class="flex">
+			<label class="lcol">Name: </label>
+			<p class="rcol" id="uac-pname" />
+		</div>
+
+		<div id="uac-email" class="flex">
+			<label class="lcol">Email: </label>
+			<p class="rcol" id="uac-pemail" />
+		</div>
+
+		<div id="uac-phone" class="flex">
+			<label class="lcol">Phone: </label>
+			<p class="rcol" id="uac-pphone" />
+		</div>
+
+		<div id="uac-balance" class="flex">
+			<label class="lcol">Balance ($): </label>
+			<p class="rcol" id="uac-pbalance" />
+		</div>
+	</div>
+
+	@*Items on Loan*@
+	<div id="uac-onloan" class="flex block">
+		<h4>Items on Loan</h4>
+		<table>
+			<thead>
+				<tr>
+					<th>ISBN</th>
+					<th>Title</th>
+					<th>Author</th>
+					<th>Date Borrowed</th>
+					<th>Date Due</th>
+					<th>Fee</th>
+				</tr>
+			</thead>
+			<tbody class="uac-tbody">
+				@*@foreach (var o in onLoanList)
+				{
+					<tr>
+						<td>@onLoanList[0]</td etc
+					</tr>
+				}
+				*@
+			</tbody>
+		</table>
+		<p class="note">Items on loan must be returned by end of day for the provided due date, else a late fee of $x per day will be applied.</p>
+	</div>
+</div>
 
 @code {
 

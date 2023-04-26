@@ -1,23 +1,27 @@
 ﻿@page "/stafflogin"
 
 <h3>Staff Login</h3>
-
+<a href="staffaccount">Temp link to staff account page</a>
 @*
 if exception, then clear fields
 if success, then redirect to StaffAccount page
 *@
 
-<div id="sli-email">
-	<label>Email: </label>
-	<input type="text" />
+<div id="stafflogin" class="flex">
+	<div id="sli-email" class="flex">
+		<label class="lcol">Email: </label>
+		<input class="rcol" type="text" />
+	</div>
+
+	<div id="sli-password" class="flex">
+		<label class="lcol">Password: </label>
+		<input class="rcol" type="text" />
+	</div>
+
+	<button type="submit" class="rcol">Login</button>
 </div>
 
-<div id="sli-password">
-	<label>Password: </label>
-	<input type="text" />
-</div>
 
-<button>Login</button>
 
 @code {
 

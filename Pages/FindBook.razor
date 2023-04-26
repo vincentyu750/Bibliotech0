@@ -3,23 +3,25 @@
 <h3>Find a Book</h3>
 
 @* Search fields *@
-<div id="fab-search">
+<div id="fab-search" class="flex">
 	<p>Search by...</p>
 
-	<div id="fab-titlesearch">
-		<label>Title: </label>
-		<input type="text"/>
+	<div id="fab-titlesearch" class="flex">
+		<label class="lcol">Title: </label>
+		<input class="rcol" type="text"/>
 	</div>
 
-	<div id="fab-authorsearch">
-		<label>Author: </label>
-		<input type="text"/>
+	<div id="fab-authorsearch" class="flex">
+		<label class="lcol">Author: </label>
+		<input class="rcol" type="text"/>
 	</div>
 
-	<div id="fab-isbnsearch">
-		<label>ISBN: </label>
-		<input type="text"/>
+	<div id="fab-isbnsearch" class="flex">
+		<label class="lcol">ISBN: </label>
+		<input class="rcol" type="text"/>
 	</div>
+
+	<button type="submit" class="rcol">Search</button>
 </div>
 
 @* Table listing results of the book search *@
