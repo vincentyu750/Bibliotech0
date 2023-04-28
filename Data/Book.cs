@@ -6,30 +6,27 @@ using System.Threading.Tasks;
 
 namespace Bibliotech0.Data
 {
-	public abstract class Book
+	public class Book
 	{
-		private string title;
-		private string authorFirstName;
-		private string authorLastName;
-		private int isbn;
-		private string location;
+		//[PrimaryKey, AutoIncrement]
+		public int ID { get; set; }
+		public string Title { get; set; }
+		public string AuthorFirstName { get; set; }
+		public string AuthorLastName { get; set; }
+		public long Isbn { get; set; }
+		public string Location { get; set; }
 
-		//class constructor
-		public Book(string title, string authorFirstName, string authorLastName, int isbn, string location)
+		public Book() { }
+
+		public Book(int id, string title, string authorFirstName, string authorLastName, long isbn, string location)
 		{
-			this.title = title;
-			this.authorFirstName = authorFirstName;
-			this.authorLastName = authorLastName;
-			this.isbn = isbn;
-			this.location = location;
+			ID = id;
+			Title = title;
+			AuthorFirstName = authorFirstName;
+			AuthorLastName = authorLastName;
+			Isbn = isbn;
+			Location = location;
 		}
-
-		//getters & setters
-		public string Title { get => title; set => title = value; }
-		public string AuthorFirstName { get => authorFirstName; set => authorFirstName = value; }
-		public string AuthorLastName { get => authorLastName; set => authorLastName = value; }
-		public int Isbn { get => isbn; set => isbn = value; }
-		public string Location { get => location; set => location = value; }
-
 	}
+
 }

@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace Bibliotech0.Data
 {
-	internal class Library
+	public class Library
 	{
+		private string locationName;
 
+		public Library(string locationName) 
+		{
+			this.locationName = locationName;
+		}
+		public string LocationName { get => locationName; set => this.locationName = value; }
 	}
+
+	
 }

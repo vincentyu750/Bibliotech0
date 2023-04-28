@@ -17,7 +17,7 @@ namespace Bibliotech0.Data
 		// method - return the book to the library
 		void ReturnBook();
 
-		// property - get the library card # of the borrower who has borrowed the item
-		int BorrowerCard { get; }
+		// property - get the cardNumber or staffID of the user who has borrowed the item
+		int UserID { get; }
 	}
 }
