@@ -1,9 +1,14 @@
-﻿namespace Bibliotech0;
+﻿using Bibliotech0.Database;
+
+namespace Bibliotech0;
 
 public partial class MainPage : ContentPage
 {
-	public MainPage()
+    private Repository repository;
+    public MainPage()
 	{
+		repository = new Repository();
 		InitializeComponent();
 	}
+
 }
