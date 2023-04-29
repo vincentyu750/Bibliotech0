@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 namespace Bibliotech0.Data
 {
-<<<<<<< Updated upstream
-	//public class ReferenceBook : Book
-=======
->>>>>>> Stashed changes
+
 
 }

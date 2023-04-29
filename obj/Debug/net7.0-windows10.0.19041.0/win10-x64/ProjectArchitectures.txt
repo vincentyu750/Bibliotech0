@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-C:\cprg250s\Bibliotech0\Bibliotech0.csproj;x64
-=======
 C:\Users\V\Desktop\Bibliotech-zb\Bibliotech0.csproj;x64
->>>>>>> Stashed changes

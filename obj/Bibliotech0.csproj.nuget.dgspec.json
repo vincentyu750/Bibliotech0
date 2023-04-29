@@ -1,33 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-    "C:\\Users\\V\\Desktop\\Bibliotech0\\Bibliotech0.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\V\\Desktop\\Bibliotech0\\Bibliotech0.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\V\\Desktop\\Bibliotech0\\Bibliotech0.csproj",
-        "projectName": "Bibliotech0",
-        "projectPath": "C:\\Users\\V\\Desktop\\Bibliotech0\\Bibliotech0.csproj",
-        "packagesPath": "C:\\Users\\V\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\V\\Desktop\\Bibliotech0\\obj\\",
-=======
-    "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\Bibliotech0.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\Bibliotech0.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\Bibliotech0.csproj",
-        "projectName": "Bibliotech0",
-        "projectPath": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\Bibliotech0.csproj",
-        "packagesPath": "C:\\Users\\sarbj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\obj\\",
->>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
-=======
     "C:\\Users\\V\\Desktop\\Bibliotech-zb\\Bibliotech0.csproj": {}
   },
   "projects": {
@@ -39,22 +12,13 @@
         "projectPath": "C:\\Users\\V\\Desktop\\Bibliotech-zb\\Bibliotech0.csproj",
         "packagesPath": "C:\\Users\\V\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\V\\Desktop\\Bibliotech-zb\\obj\\",
->>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< Updated upstream
-<<<<<<< HEAD
           "C:\\Users\\V\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\sarbj\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
-=======
-          "C:\\Users\\V\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -101,13 +65,10 @@
               "target": "Package",
               "version": "[8.2.0, )"
             },
-<<<<<<< Updated upstream
-=======
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
               "version": "[7.0.5, )"
             },
->>>>>>> Stashed changes
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[7.0.59, )",
@@ -296,7 +257,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
@@ -305,13 +266,10 @@
               "target": "Package",
               "version": "[8.2.0, )"
             },
-<<<<<<< Updated upstream
-=======
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
               "version": "[7.0.5, )"
             },
->>>>>>> Stashed changes
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[7.0.59, )",
@@ -433,7 +391,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
@@ -442,13 +400,10 @@
               "target": "Package",
               "version": "[8.2.0, )"
             },
-<<<<<<< Updated upstream
-=======
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
               "version": "[7.0.5, )"
             },
->>>>>>> Stashed changes
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[7.0.59, )",
@@ -571,7 +526,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
@@ -580,13 +535,10 @@
               "target": "Package",
               "version": "[8.2.0, )"
             },
-<<<<<<< Updated upstream
-=======
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
               "version": "[7.0.5, )"
             },
->>>>>>> Stashed changes
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[7.0.59, )",
@@ -704,11 +656,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.4, 7.0.4]"
+              "version": "[7.0.5, 7.0.5]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[7.0.4, 7.0.4]"
+              "version": "[7.0.5, 7.0.5]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -716,7 +668,7 @@
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.4, 7.0.4]"
+              "version": "[7.0.5, 7.0.5]"
             }
           ],
           "frameworkReferences": {
@@ -736,7 +688,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

@@ -22,14 +22,6 @@
 
         <input type="text" id="isbn-input" @onkeydown="@FilterBooks" />
 
-<<<<<<< Updated upstream
-	@*Search for User*@
-	<div id="sac-search" class="blox flex">
-		<h4>Search Users</h4>
-		@*Search Fields*@
-		<div id="sac-searchfields" class="flex">
-			<p>Search by...</p>
-=======
         @if (!string.IsNullOrEmpty(SuccessMessage))
         {
             <div class="alert alert-success">@SuccessMessage</div>
@@ -40,37 +32,11 @@
     <div id="sac-create" class="blox flex">
         <h4>Create New User</h4>
     </div>
->>>>>>> Stashed changes
 
     <!-- Search for User -->
     <div id="sac-search" class="blox flex">
         <h4>Search Users</h4>
 
-<<<<<<< Updated upstream
-			<div id="sac-searchemail" class="flex">
-				<label id="sac-email" class="lcol">Email: </label>
-				<input type="text" class="rcol" />
-			</div>
-		</div>
-		@*Search Results*@
-		<div id="sac-results" class="flex">
-			<table>
-				<thead>
-					<tr>
-						<th>Select</th>
-						<th>Library Card #</th>
-						<th>Name</th>
-						<th>Email</th>
-						<th></th>
-					</tr>
-				</thead>
-			</table>
-		</div>
-	</div>
-
-	
-
-=======
         <!-- Search Fields -->
         <div id="sac-searchfields" class="flex">
             <p>Search by...</p>
@@ -105,7 +71,6 @@
             </table>
         </div>
     </div>
->>>>>>> Stashed changes
 </div>
 
 @code {

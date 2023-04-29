@@ -14,14 +14,8 @@
 <div class="main flex">
     <button id="userlogout" type="submit" class="logout">Log Out</button>
 
-<<<<<<< Updated upstream
-	@*User Account Information*@
-	<div id="uac-info" class="blox flex">
-		<h4 class="flex">User Info</h4>
-=======
     <div id="uac-info" class="blox flex">
         <h4>User Info</h4>
->>>>>>> Stashed changes
 
         <div id="uac-card" class="flex">
             <label class="lcol">Library Card #: </label>
@@ -44,40 +38,6 @@
         </div>
     </div>
 
-<<<<<<< Updated upstream
-		<div id="uac-balance" class="flex">
-			<label class="lcol">Balance ($): </label>
-			<p class="rcol" id="uac-pbalance" />
-		</div>
-	</div>
-
-	@*Items on Loan*@
-	<div id="uac-onloan" class="blox flex">
-		<h4>Items on Loan</h4>
-		<table>
-			<thead>
-				<tr>
-					<th>ISBN</th>
-					<th>Title</th>
-					<th>Author</th>
-					<th>Date Borrowed</th>
-					<th>Date Due</th>
-					<th>Fee</th>
-				</tr>
-			</thead>
-			<tbody class="uac-tbody">
-				@*@foreach (var o in onLoanList)
-				{
-					<tr>
-						<td>@onLoanList[0]</td etc
-					</tr>
-				}
-				*@
-			</tbody>
-		</table>
-		<p class="note">Items on loan must be returned by end of day for the provided due date, else a late fee of $x per day will be applied.</p>
-	</div>
-=======
     @*Items on Loan*@
     <div id="uac-onloan" class="blox flex">
         <h4>Items on Loan</h4>
@@ -109,7 +69,6 @@
         </table>
         <p class="note">Items on loan must be returned by end of day for the provided due date, else a late fee of $x per day will be applied.</p>
     </div>
->>>>>>> Stashed changes
 </div>
 
 @code {

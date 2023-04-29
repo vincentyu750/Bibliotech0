@@ -157,11 +157,6 @@ glide.aar
 GoogleGson.aar
 Microsoft.AspNetCore.Components.WebView.Maui.aar
 Xamarin.Google.Crypto.Tink.Android.aar
-<<<<<<< Updated upstream
-SQLitePCLRaw.lib.e_sqlite3.android.dll
-SQLitePCLRaw.batteries_v2.dll
-=======
 SQLitePCLRaw.batteries_v2.dll
 SQLitePCLRaw.lib.e_sqlite3.android.dll
->>>>>>> Stashed changes
 SQLitePCLRaw.lib.e_sqlite3.android.aar

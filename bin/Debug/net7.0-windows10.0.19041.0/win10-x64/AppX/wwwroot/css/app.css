@@ -136,18 +136,19 @@ tbody {
 
 #userlogin,
 #stafflogin,
-#fab-search {
+#fab-search,
+#sac-searchfields {
     flex-direction:column;
 }
 
 button {
-    width: 40px;
+    width: 80px;
     border: solid, 2px, #4d4519;
     text-align: center;
 }
 
-button .rcol {
-    margin-left: 110px;
+.submitbutton {
+    margin-left: 150px;
 }
 
 h3,
@@ -155,18 +156,13 @@ h4 {
     color: #655c27;
 }
 
-.block {
-    background-color: #edede1;
-    margin: 10px, 20px, 10px, 20px;
-    padding: 20px;
-<<<<<<< Updated upstream
+.blox {
     flex-direction: column;
-    width: auto;
-    height: fit-content;
-=======
+    margin: 10px, 20px, 10px, 20px;
+    background-color: #edede1;
+    padding: 20px;
     width: 830px;
     height: auto;
->>>>>>> Stashed changes
 }
 
 .note {
@@ -175,9 +171,6 @@ h4 {
 
 .main {
     flex-direction: column;
-<<<<<<< Updated upstream
-    justify-content: space-between;
-=======
 }
 
 #ind-locations {
@@ -207,5 +200,4 @@ h4 {
 
 #sac-searchfields {
     margin-bottom: 20px;
->>>>>>> Stashed changes
 }

@@ -10,7 +10,7 @@
 @inject IBookService bookService
 
 <h3>Borrow a Book</h3>
-<p>@testVa</p>
+
 @*
 if logged in, then scanning textfield is available (need to figure out how to 'grey-out'/disable),
 user scans book (type/paste in isbn and press enter),
@@ -62,9 +62,6 @@ confirm y/n,
 </div>
 
 @code {
-<<<<<<< Updated upstream
-	string testVa = Path.Combine(new DirectoryInfo(AppContext.BaseDirectory).Parent.Parent.Parent.Parent.Parent.FullName, "Database", "LibraryDatabase.db");
-=======
 	private List<Book> books = new List<Book>();
 	private List<Book> filteredBooks = new List<Book>(); // List to hold filtered books
 	private List<LoanableBook> borrowedBooks = new List<LoanableBook>();
@@ -77,7 +74,6 @@ confirm y/n,
 		books = await database.BookListAsync();
 		filteredBooks = books; // Initialize filteredBooks with all books
 	}
->>>>>>> Stashed changes
 
 	public void Enter(KeyboardEventArgs e)
 	{
@@ -85,7 +81,6 @@ confirm y/n,
 		{
 			//stuff to execute for book borrow scan
 		}
-
 	}
 
 	private async Task FilterBooks(KeyboardEventArgs e)

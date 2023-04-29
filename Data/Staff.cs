@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bibliotech0.Data
 {
-	public class Staff : User
+	internal class Staff : User
 	{
 		private int staffID;
 

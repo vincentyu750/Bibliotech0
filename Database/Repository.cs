@@ -39,9 +39,6 @@ namespace Bibliotech0.Database
                 throw;
             }
         }
-<<<<<<< Updated upstream
-    }
-=======
 
 		public async Task<List<Book>> FilterBooks(long isbn)
 		{
@@ -58,5 +55,4 @@ namespace Bibliotech0.Database
 
 
 	}
->>>>>>> Stashed changes
 }
