@@ -1,3 +1,4 @@
+
 ﻿using SQLite;
 using System.ComponentModel.DataAnnotations;
 
@@ -28,3 +29,4 @@ namespace Bibliotech0.Data
         }
     }
 }
+

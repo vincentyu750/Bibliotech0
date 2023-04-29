@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "inWbGecqfmVpTfAY2qCCWSNrIwDTcgtzAw1M8qUoQ3g=",
+=======
+  "Hash": "q7p9SFCRzoCT0qubqwFkKSvsKvPL3a2EGkaPx7L4uQE=",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
   "Source": "Bibliotech0",
   "BasePath": "/",
   "Mode": "Root",
@@ -10,17 +14,28 @@
     {
       "Name": "Bibliotech0\\wwwroot",
       "Source": "Bibliotech0",
+<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Bibliotech0.styles.css",
       "SourceId": "Bibliotech0",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Bibliotech0.styles.css",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "Bibliotech0.styles.css",
       "AssetKind": "All",
@@ -31,6 +46,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\V\\Desktop\\Bibliotech0\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Bibliotech0.styles.css"
     },
     {
@@ -38,6 +54,15 @@
       "SourceId": "Bibliotech0",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Bibliotech0.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\Bibliotech0.bundle.scp.css",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "Bibliotech0.bundle.scp.css",
       "AssetKind": "All",
@@ -48,6 +73,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\V\\Desktop\\Bibliotech0\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\Bibliotech0.bundle.scp.css"
     },
     {
@@ -55,6 +81,15 @@
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\Bibliotech0.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\css\\app.css",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -68,10 +103,17 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -85,10 +127,17 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -102,10 +151,17 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -119,10 +175,17 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -136,10 +199,17 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -153,10 +223,17 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -170,10 +247,17 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -187,10 +271,17 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -204,10 +295,17 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -221,10 +319,17 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -238,10 +343,17 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\css\\open-iconic\\README.md",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -255,10 +367,17 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\favicon.ico",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\favicon.ico",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -272,10 +391,17 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\index.html",
       "SourceId": "Bibliotech0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\V\\Desktop\\Bibliotech0\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\index.html",
+      "SourceId": "Bibliotech0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\wwwroot\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
       "BasePath": "/",
       "RelativePath": "index.html",
       "AssetKind": "All",
