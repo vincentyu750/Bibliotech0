@@ -1,7 +1,7 @@
 ﻿@page "/borrow"
 
 <h3>Borrow a Book</h3>
-
+<p>@testVa</p>
 @*
 if logged in, then scanning textfield is available (need to figure out how to 'grey-out'/disable),
 user scans book (type/paste in isbn and press enter),
@@ -44,11 +44,14 @@ confirm y/n,
 
 
 @code {
+	string testVa = Path.Combine(new DirectoryInfo(AppContext.BaseDirectory).Parent.Parent.Parent.Parent.Parent.FullName, "Database", "LibraryDatabase.db");
+
 	public void Enter(KeyboardEventArgs e)
 	{
 		if (e.Code == "Enter" || e.Code == "NumpadEnter")
 		{
 			//stuff to execute for book borrow scan
 		}
+
 	}
 }

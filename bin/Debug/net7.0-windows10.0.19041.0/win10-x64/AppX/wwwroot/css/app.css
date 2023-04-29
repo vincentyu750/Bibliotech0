@@ -136,8 +136,7 @@ tbody {
 
 #userlogin,
 #stafflogin,
-#fab-search,
-#sac-searchfields {
+#fab-search {
     flex-direction:column;
 }
 
@@ -161,7 +160,7 @@ h4 {
     margin: 10px, 20px, 10px, 20px;
     padding: 20px;
     flex-direction: column;
-    width: 830px;
+    width: auto;
     height: fit-content;
 }
 
@@ -172,33 +171,4 @@ h4 {
 .main {
     flex-direction: column;
     justify-content: space-between;
-}
-
-#ind-locations {
-    flex-flow: row wrap;
-    justify-content:center;
-}
-
-.location {
-    flex-direction: column;
-    margin: 20px;
-    background-color: #edede1;
-    padding: 5px;
-    width:200px;
-    text-align:center;
-}
-
-.location h5 {
-    font-size: 18px;
-    font-weight:500;
-    color: #655c27;
-}
-
-.location p {
-    font-size: 15px;
-    margin: 0px;
-}
-
-#sac-searchfields {
-    margin-bottom: 20px;
 }
