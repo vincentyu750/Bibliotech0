@@ -1,24 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "C:\\cprg250s\\Bibliotech0\\Bibliotech0.csproj": {}
+<<<<<<< HEAD
+    "C:\\Users\\V\\Desktop\\Bibliotech0\\Bibliotech0.csproj": {}
   },
   "projects": {
-    "C:\\cprg250s\\Bibliotech0\\Bibliotech0.csproj": {
+    "C:\\Users\\V\\Desktop\\Bibliotech0\\Bibliotech0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\cprg250s\\Bibliotech0\\Bibliotech0.csproj",
+        "projectUniqueName": "C:\\Users\\V\\Desktop\\Bibliotech0\\Bibliotech0.csproj",
         "projectName": "Bibliotech0",
-        "projectPath": "C:\\cprg250s\\Bibliotech0\\Bibliotech0.csproj",
+        "projectPath": "C:\\Users\\V\\Desktop\\Bibliotech0\\Bibliotech0.csproj",
         "packagesPath": "C:\\Users\\V\\.nuget\\packages\\",
-        "outputPath": "C:\\cprg250s\\Bibliotech0\\obj\\",
+        "outputPath": "C:\\Users\\V\\Desktop\\Bibliotech0\\obj\\",
+=======
+    "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\Bibliotech0.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\Bibliotech0.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\Bibliotech0.csproj",
+        "projectName": "Bibliotech0",
+        "projectPath": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\Bibliotech0.csproj",
+        "packagesPath": "C:\\Users\\sarbj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sarbj\\OneDrive\\Documents\\my project\\obj\\",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\V\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\sarbj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

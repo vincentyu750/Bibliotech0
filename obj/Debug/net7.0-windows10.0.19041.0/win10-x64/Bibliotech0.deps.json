@@ -9,12 +9,16 @@
     ".NETCoreApp,Version=v7.0/win10-x64": {
       "Bibliotech0/1.0": {
         "dependencies": {
+<<<<<<< Updated upstream
+          "Microsoft.AspNetCore.Components.WebView.Maui": "7.0.59",
+=======
           "CommunityToolkit.Mvvm": "8.2.0",
           "Microsoft.AspNetCore.Components.WebView.Maui": "7.0.59",
           "Microsoft.Data.Sqlite": "7.0.5",
           "Microsoft.Data.Sqlite.Core": "7.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "7.0.5",
+>>>>>>> Stashed changes
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0",
@@ -24,6 +28,8 @@
           "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "7.0.59",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.221209.1",
+<<<<<<< Updated upstream
+=======
           "SQLitePCLRaw.bundle_green": "2.1.0",
           "SQLitePCLRaw.core": "2.1.4",
           "SQLitePCLRaw.provider.dynamic_cdecl": "2.1.0",
@@ -33,6 +39,7 @@
           "ThinkGeo.Dependency.SQLite": "12.2.1",
           "sqlite-net": "1.6.292",
           "sqlite-net-pcl": "1.8.116",
+>>>>>>> Stashed changes
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "7.0.4",
           "runtimepack.Microsoft.Maui.Core.Runtime.win": "7.0.59",
           "runtimepack.Microsoft.Maui.Controls.Runtime.win": "7.0.59",
@@ -1263,6 +1270,8 @@
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "7.0.59.0"
+<<<<<<< Updated upstream
+=======
           }
         }
       },
@@ -1282,6 +1291,7 @@
           "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
             "assemblyVersion": "4.0.2.0",
             "fileVersion": "4.700.19.56404"
+>>>>>>> Stashed changes
           }
         }
       },
@@ -2050,6 +2060,8 @@
       "sha512": "sha512-ExNm2DreudUpAESDCpmFqruINxrjgpNOl+80GjCp/yoFv6QX3exYBmrFZ2zWSb7RrvWJnBPN9SaOHbkpT2+x2A==",
       "path": "microsoft.maui.graphics.win2d.winui.desktop/7.0.59",
       "hashPath": "microsoft.maui.graphics.win2d.winui.desktop.7.0.59.nupkg.sha512"
+<<<<<<< Updated upstream
+=======
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",
@@ -2078,6 +2090,7 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+>>>>>>> Stashed changes
     },
     "Microsoft.Windows.SDK.BuildTools/10.0.22621.755": {
       "type": "package",

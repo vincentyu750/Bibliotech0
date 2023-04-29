@@ -31,7 +31,15 @@ public static class MauiProgram
         var db = new SQLiteAsyncConnection(databasePath);
         builder.Services.AddSingleton(db);
 
-		return builder.Build();
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+		//builder.Services.AddSingleton<WeatherForecastService>();
 
+>>>>>>> 6a19cba319f8dfdb174b43832bf319ec976a00a6
+		return builder.Build();
+=======
+        return builder.Build();
+>>>>>>> Stashed changes
 	}
 }
