@@ -142,13 +142,13 @@ tbody {
 }
 
 button {
-    width: 40px;
+    width: 80px;
     border: solid, 2px, #4d4519;
     text-align: center;
 }
 
-button .rcol {
-    margin-left: 110px;
+.submitbutton {
+    margin-left: 150px;
 }
 
 h3,
@@ -156,13 +156,13 @@ h4 {
     color: #655c27;
 }
 
-.block {
-    background-color: #edede1;
-    margin: 10px, 20px, 10px, 20px;
-    padding: 20px;
+.blox {
     flex-direction: column;
+    margin: 10px, 20px, 10px, 20px;
+    background-color: #edede1;
+    padding: 20px;
     width: 830px;
-    height: fit-content;
+    height: auto;
 }
 
 .note {
@@ -171,7 +171,6 @@ h4 {
 
 .main {
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #ind-locations {

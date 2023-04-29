@@ -136,18 +136,19 @@ tbody {
 
 #userlogin,
 #stafflogin,
-#fab-search {
+#fab-search,
+#sac-searchfields {
     flex-direction:column;
 }
 
 button {
-    width: 40px;
+    width: 80px;
     border: solid, 2px, #4d4519;
     text-align: center;
 }
 
-button .rcol {
-    margin-left: 110px;
+.submitbutton {
+    margin-left: 150px;
 }
 
 h3,
@@ -155,20 +156,48 @@ h4 {
     color: #655c27;
 }
 
-.block {
-    background-color: #edede1;
-    margin: 10px, 20px, 10px, 20px;
-    padding: 20px;
+.blox {
     flex-direction: column;
-    width: auto;
-    height: fit-content;
+    margin: 10px, 20px, 10px, 20px;
+    background-color: #edede1;
+    padding: 20px;
+    width: 830px;
+    height: 500px;
 }
 
 .note {
     font-style: italic;
 }
 
-.main {
+/*.main {
     flex-direction: column;
-    justify-content: space-between;
+}*/
+
+#ind-locations {
+    flex-flow: row wrap;
+    justify-content:center;
+}
+
+.location {
+    flex-direction: column;
+    margin: 20px;
+    background-color: #edede1;
+    padding: 5px;
+    width:200px;
+    text-align:center;
+}
+
+.location h5 {
+    font-size: 18px;
+    font-weight:500;
+    color: #655c27;
+}
+
+.location p {
+    font-size: 15px;
+    margin: 0px;
+}
+
+#sac-searchfields {
+    margin-bottom: 20px;
 }
