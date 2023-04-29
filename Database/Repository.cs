@@ -39,5 +39,24 @@ namespace Bibliotech0.Database
                 throw;
             }
         }
+<<<<<<< Updated upstream
     }
+=======
+
+		public async Task<List<Book>> FilterBooks(long isbn)
+		{
+			try
+			{
+				return await Books.Where(b => b.Isbn == isbn).ToListAsync();
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex);
+				throw;
+			}
+		}
+
+
+	}
+>>>>>>> Stashed changes
 }

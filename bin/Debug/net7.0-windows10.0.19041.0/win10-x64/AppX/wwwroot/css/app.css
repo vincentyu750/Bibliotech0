@@ -159,9 +159,14 @@ h4 {
     background-color: #edede1;
     margin: 10px, 20px, 10px, 20px;
     padding: 20px;
+<<<<<<< Updated upstream
     flex-direction: column;
     width: auto;
     height: fit-content;
+=======
+    width: 830px;
+    height: auto;
+>>>>>>> Stashed changes
 }
 
 .note {
@@ -170,5 +175,37 @@ h4 {
 
 .main {
     flex-direction: column;
+<<<<<<< Updated upstream
     justify-content: space-between;
+=======
+}
+
+#ind-locations {
+    flex-flow: row wrap;
+    justify-content:center;
+}
+
+.location {
+    flex-direction: column;
+    margin: 20px;
+    background-color: #edede1;
+    padding: 5px;
+    width:200px;
+    text-align:center;
+}
+
+.location h5 {
+    font-size: 18px;
+    font-weight:500;
+    color: #655c27;
+}
+
+.location p {
+    font-size: 15px;
+    margin: 0px;
+}
+
+#sac-searchfields {
+    margin-bottom: 20px;
+>>>>>>> Stashed changes
 }

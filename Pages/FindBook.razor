@@ -11,6 +11,7 @@
 <div id="fab-search" class="flex">
     <p>Search by...</p>
 
+<<<<<<< Updated upstream
     <div id="fab-titlesearch" class="flex">
         <label class="lcol">Title: </label>
         <input class="rcol" type="text" @bind="@titleSearchTerm" />
@@ -26,10 +27,28 @@
         <input class="rcol" type="text" @bind="@isbnSearchTerm" />
     </div>
     <button type="submit" class="rcol" @onclick="SearchBooks">Search</button>
+=======
+	<div id="fab-titlesearch" class="flex">
+		<label class="lcol">Title: </label>
+		<input class="rcol" type="text" @bind="@titleSearchTerm" />
+	</div>
+
+	<div id="fab-authorsearch" class="flex">
+		<label class="lcol">Author: </label>
+		<input class="rcol" type="text" @bind="@authorSearchTerm" />
+	</div>
+
+	<div id="fab-isbnsearch" class="flex">
+		<label class="lcol">ISBN: </label>
+		<input class="rcol" type="text" @bind="@isbnSearchTerm" />
+	</div>
+	<button type="submit" class="submitbutton" @onclick="SearchBooks">Search</button>
+>>>>>>> Stashed changes
 </div>
 
 <!-- Table listing results of the book search -->
 <div id="fab-results">
+<<<<<<< Updated upstream
     <table>
         <thead>
             <tr>
@@ -53,9 +72,35 @@
             }
         </tbody>
     </table>
+=======
+	<table>
+		<thead>
+			<tr>
+				<th>ISBN</th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Location</th>
+				<th>Available</th>
+			</tr>
+		</thead>
+		<tbody class="fab-tbody">
+			@foreach (var book in filteredBooks)
+			{
+				<tr>
+					<td>@book.Isbn</td>
+					<td>@book.Title</td>
+					<td>@book.AuthorFirstName @book.AuthorLastName</td>
+					<td>@book.Location</td>
+					<td>@book.IsAvailable</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+>>>>>>> Stashed changes
 </div>
 
 @code {
+<<<<<<< Updated upstream
     private List<Book> books = new List<Book>();
     private List<Book> filteredBooks = new List<Book>(); // List to hold filtered books
     private Repository database = new Repository();
@@ -80,4 +125,36 @@
             (string.IsNullOrEmpty(isbnSearchTerm) || book.Isbn.ToString().Contains(isbnSearchTerm))
         ).ToList();
     }
+=======
+	private List<Book> books = new List<Book>();
+	private List<Book> filteredBooks = new List<Book>(); // List to hold filtered books
+	private Repository database = new Repository();
+
+	private string titleSearchTerm = "";
+	private string authorSearchTerm = "";
+	private string isbnSearchTerm = "";
+
+	protected override async Task OnInitializedAsync()
+	{
+		books = await database.BookListAsync();
+		filteredBooks = books; // Initialize filteredBooks with all books
+	}
+	protected override async Task OnParametersSetAsync()
+	{
+		await base.OnParametersSetAsync();
+		books = await database.BookListAsync();
+		filteredBooks = books;
+	}
+
+	private void SearchBooks()
+	{
+		// Perform search based on the provided search terms
+		filteredBooks = books.Where(book =>
+			book.Title.Contains(titleSearchTerm, StringComparison.OrdinalIgnoreCase) &&
+			(string.IsNullOrEmpty(authorSearchTerm) ||
+				(book.AuthorFirstName + " " + book.AuthorLastName).Contains(authorSearchTerm, StringComparison.OrdinalIgnoreCase)) &&
+			(string.IsNullOrEmpty(isbnSearchTerm) || book.Isbn.ToString().Contains(isbnSearchTerm))
+		).ToList();
+	}
+>>>>>>> Stashed changes
 }

@@ -1,35 +1,50 @@
 ﻿@page "/useraccount"
+@using Bibliotech0.Database
+@using Bibliotech0.Data
+@using Bibliotech0.Services
+@using SQLite;
+@using Microsoft.EntityFrameworkCore;
+@using Bibliotech0.Interface
+@inject IJSRuntime jsRuntime
+@inject FindBookService findBookService
+@inject IBookService bookService
 
 <h3>User Account</h3>
 
 <div class="main flex">
-	@*Logout Button*@
-	<button id="userlogout" type="submit" class="logout">Log Out</button>
+    <button id="userlogout" type="submit" class="logout">Log Out</button>
 
+<<<<<<< Updated upstream
 	@*User Account Information*@
 	<div id="uac-info" class="flex block">
 		<h4 class="flex">User Info</h4>
+=======
+    <div id="uac-info" class="blox flex">
+        <h4>User Info</h4>
+>>>>>>> Stashed changes
 
-		<div id="uac-card" class="flex">
-			<label class="lcol">Library Card #: </label>
-			<p class="rcol" id="uac-pcard" />
-		</div>
+        <div id="uac-card" class="flex">
+            <label class="lcol">Library Card #: </label>
+            <p class="rcol" id="uac-pcard">123456789</p>
+        </div>
 
-		<div id="uac-name" class="flex">
-			<label class="lcol">Name: </label>
-			<p class="rcol" id="uac-pname" />
-		</div>
+        <div id="uac-name" class="flex">
+            <label class="lcol">Name: </label>
+            <p class="rcol" id="uac-pname">John Doe</p>
+        </div>
 
-		<div id="uac-email" class="flex">
-			<label class="lcol">Email: </label>
-			<p class="rcol" id="uac-pemail" />
-		</div>
+        <div id="uac-email" class="flex">
+            <label class="lcol">Email: </label>
+            <p class="rcol" id="uac-pemail">johndoe@example.com</p>
+        </div>
 
-		<div id="uac-phone" class="flex">
-			<label class="lcol">Phone: </label>
-			<p class="rcol" id="uac-pphone" />
-		</div>
+        <div id="uac-phone" class="flex">
+            <label class="lcol">Phone: </label>
+            <p class="rcol" id="uac-pphone">(123) 456-7890</p>
+        </div>
+    </div>
 
+<<<<<<< Updated upstream
 		<div id="uac-balance" class="flex">
 			<label class="lcol">Balance ($): </label>
 			<p class="rcol" id="uac-pbalance" />
@@ -62,8 +77,43 @@
 		</table>
 		<p class="note">Items on loan must be returned by end of day for the provided due date, else a late fee of $x per day will be applied.</p>
 	</div>
+=======
+    @*Items on Loan*@
+    <div id="uac-onloan" class="blox flex">
+        <h4>Items on Loan</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>ISBN</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Date Borrowed</th>
+                    <th>Date Due</th>
+                </tr>
+            </thead>
+            <tbody class="uac-tbody">
+                @foreach (var book in bookService.BorrowedBooks)
+                {
+                    @if (book is LoanableBook loanableBook)
+                    {
+                        <tr>
+                            <td>@loanableBook.Isbn</td>
+                            <td>@loanableBook.Title</td>
+                            <td>@($"{loanableBook.AuthorFirstName} {loanableBook.AuthorLastName}")</td>
+                            <td>@loanableBook.BorrowDate</td>
+                            <td>@loanableBook.ReturnDate</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+        <p class="note">Items on loan must be returned by end of day for the provided due date, else a late fee of $x per day will be applied.</p>
+    </div>
+>>>>>>> Stashed changes
 </div>
 
 @code {
+
+
 
 }

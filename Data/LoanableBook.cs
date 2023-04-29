@@ -10,6 +10,7 @@ namespace Bibliotech0.Data
 	{
 		private string borrowDate;
 		private string returnDate;
+<<<<<<< Updated upstream
 		private bool isAvailable;
 		private string genre;
 		private int borrowedByCard;
@@ -36,3 +37,21 @@ namespace Bibliotech0.Data
 
 	}
 }
+=======
+		private string isAvailable;
+
+		// class constructor
+		public LoanableBook(int id, string title, string authorFirstName, string authorLastName, long isbn, string location, string borrowDate, string returnDate, string isAvailable)
+			: base(id, title, authorFirstName, authorLastName, isbn, location, isAvailable)
+		{
+			this.borrowDate = borrowDate;
+			this.returnDate = returnDate;
+			this.isAvailable = "Yes"; // set isAvailable to true by default
+		}
+
+		// getters & setters
+		public string BorrowDate { get => borrowDate; set => borrowDate = value; }
+		public string ReturnDate { get => returnDate; set => returnDate = value; }
+	}
+}
+>>>>>>> Stashed changes
