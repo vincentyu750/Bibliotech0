@@ -1,24 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SQLite;
+using System.ComponentModel.DataAnnotations;
 
 namespace Bibliotech0.Data
 {
 	public class Book
 	{
-		//[PrimaryKey, AutoIncrement]
+		[Key]
 		public int ID { get; set; }
 		public string Title { get; set; }
 		public string AuthorFirstName { get; set; }
 		public string AuthorLastName { get; set; }
 		public long Isbn { get; set; }
 		public string Location { get; set; }
+		public string IsAvailable { get; set; }
 
 		public Book() { }
 
-		public Book(int id, string title, string authorFirstName, string authorLastName, long isbn, string location)
+		public Book(int id, string title, string authorFirstName, string authorLastName, long isbn, string location, string isAvailable)
 		{
 			ID = id;
 			Title = title;
@@ -26,7 +24,7 @@ namespace Bibliotech0.Data
 			AuthorLastName = authorLastName;
 			Isbn = isbn;
 			Location = location;
+			IsAvailable = isAvailable;
 		}
 	}
-
 }

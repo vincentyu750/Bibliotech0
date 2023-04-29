@@ -1,4 +1,13 @@
 ﻿@page "/borrow"
+@using Bibliotech0.Database
+@using Bibliotech0.Data
+@using Bibliotech0.Services
+@using SQLite;
+@using Microsoft.EntityFrameworkCore;
+@using Bibliotech0.Interface;
+@inject IJSRuntime jsRuntime
+@inject FindBookService findBookService
+@inject IBookService bookService
 
 <h3>Borrow a Book</h3>
 
@@ -12,8 +21,7 @@ confirm y/n,
 
 <div id="bab-scan">
 	<p>Please scan the book's ISBN barcode</p>
-	@*pressing 'enter' key after entering isbn will execute code defined at bottom, can just use a button if this doesn't work*@
-	<input type="text" @onkeydown="@Enter" />
+	<input type="text" id="isbn-input" @onkeydown="@FilterBooks" />
 </div>
 
 <div id="bab-table">
@@ -27,28 +35,92 @@ confirm y/n,
 				<th>Date Due</th>
 			</tr>
 		</thead>
-		<tbody class="bab-tbody">
-			@*
-				@foreach (var b in borrowList)
+
+		<tbody>
+			@foreach (var book in bookService.BorrowedBooks)
+			{
+				@if (book is LoanableBook loanableBook)
 				{
 					<tr>
-						<td>@borrowList[0]</td> etc.
+						<td>@loanableBook.Isbn</td>
+						<td>@loanableBook.Title</td>
+						<td>@($"{loanableBook.AuthorFirstName} {loanableBook.AuthorLastName}")</td>
+						<td>@loanableBook.BorrowDate</td>
+						<td>@loanableBook.ReturnDate</td>
 					</tr>
 				}
-			*@
+			}
 		</tbody>
 	</table>
+@*	Debug Statement
+	@if (filteredBooks.Count > 0)
+	{
+		<p>@($"Filtered Book: ID={filteredBooks[0].ID}, Title={filteredBooks[0].Title}, Author={filteredBooks[0].AuthorFirstName} {filteredBooks[0].AuthorLastName}, ISBN={filteredBooks[0].Isbn}, Location={filteredBooks[0].Location}")</p>
+		
+	}*@
+
 </div>
 
-
-
-
 @code {
+	private List<Book> books = new List<Book>();
+	private List<Book> filteredBooks = new List<Book>(); // List to hold filtered books
+	private List<LoanableBook> borrowedBooks = new List<LoanableBook>();
+	private Repository database = new Repository();
+
+	private string isbnSearchTerm = "";
+
+	protected override async Task OnInitializedAsync()
+	{
+		books = await database.BookListAsync();
+		filteredBooks = books; // Initialize filteredBooks with all books
+	}
+
 	public void Enter(KeyboardEventArgs e)
 	{
 		if (e.Code == "Enter" || e.Code == "NumpadEnter")
 		{
 			//stuff to execute for book borrow scan
+		}
+	}
+
+	private async Task FilterBooks(KeyboardEventArgs e)
+	{
+		if (e.Key == "Enter")
+		{
+			long isbn = 0;
+			if (long.TryParse(await jsRuntime.InvokeAsync<string>("eval", "document.getElementById('isbn-input').value"), out isbn))
+			{
+				filteredBooks = await database.Books.Where(b => b.Isbn == isbn).ToListAsync();
+
+				// add the book to the borrowedBooks list
+				if (filteredBooks.Count > 0)
+				{
+					var book = filteredBooks[0];
+
+					// create a new loanableBook with current date as borrowDate and returnDate 30 days from now
+					LoanableBook loanableBook = new LoanableBook(
+						book.ID,
+						book.Title,
+						book.AuthorFirstName,
+						book.AuthorLastName,
+						book.Isbn,
+						book.Location,
+						DateTime.Now.ToString("yyyy-MM-dd"),
+						DateTime.Now.AddDays(30).ToString("yyyy-MM-dd"),
+						"No");
+
+					// add the loanableBook to borrowedBooks
+					bookService.BorrowedBooks.Add(loanableBook);
+
+					// remove the book from the database
+					database.Books.Remove(book);
+					await database.SaveChangesAsync();
+				}
+			}
+			else
+			{
+				// handle invalid input
+			}
 		}
 	}
 }

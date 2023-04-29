@@ -1,4 +1,6 @@
 ﻿@page "/userlogin"
+@using Bibliotech0.Interface
+@using Bibliotech0.Data
 
 <h3>User Login</h3>
 <a href="useraccount">Temp link to user account page</a>
@@ -9,21 +11,21 @@ if success, then redirect to UserAccount page
 *@
 
 <div id="userlogin" class="flex">
-	<div id="uli-email" class="flex">
-		<label class="lcol">Email: </label>
-		<input class="rcol" type="text" />
-	</div>
+    <div id="uli-email" class="flex">
+        <label class="lcol">Email: </label>
+        <input class="rcol" type="text" @bind-value="Email" />
+    </div>
 
-	<div id="uli-password" class="flex">
-		<label class="lcol">Password: </label>
-		<input class="rcol" type="text" />
-	</div>
+    <div id="uli-password" class="flex">
+        <label class="lcol">Password: </label>
+        <input class="rcol" type="password" @bind-value="Password" />
+    </div>
 
-	<button type="submit" class="submitbutton">Login</button>
+    <button type="submit" class="submitbutton">Login</button>
 </div>
 
-
-
 @code {
+    private string Email { get; set; }
+    private string Password { get; set; }
 
 }
