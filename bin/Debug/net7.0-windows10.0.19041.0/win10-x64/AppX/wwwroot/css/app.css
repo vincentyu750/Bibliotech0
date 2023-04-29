@@ -162,16 +162,16 @@ h4 {
     background-color: #edede1;
     padding: 20px;
     width: 830px;
-    height: 500px;
+    height: auto;
 }
 
 .note {
     font-style: italic;
 }
 
-/*.main {
+.main {
     flex-direction: column;
-}*/
+}
 
 #ind-locations {
     flex-flow: row wrap;
