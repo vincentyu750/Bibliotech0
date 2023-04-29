@@ -1,70 +1,118 @@
 ﻿@page "/staffaccount"
+@using Bibliotech0.Database
+@using Bibliotech0.Data
+@using Bibliotech0.Services
+@using SQLite;
+@using Microsoft.EntityFrameworkCore;
+@using Bibliotech0.Interface
+@inject IJSRuntime jsRuntime
+@inject FindBookService findBookService
+@inject IBookService bookService
 
 <h3>Staff Account</h3>
 
 <div class="main flex">
-	@*Logout Button*@
-	<button id="stafflogout" type="submit" class="logout">Log Out</button>
+    <!-- Logout Button -->
+    <button id="stafflogout" type="submit" class="logout">Log Out</button>
 
-	@*Book Returns*@
-	<div id="sac-bookreturn" class="blox flex">
-		<h4>Book Returns</h4>
-		<p>Please scan the book's ISBN barcode</p>
-		@*pressing 'enter' key after entering isbn will execute code defined at bottom, can just use a button if this doesn't work*@
-		<input type="text" @onkeydown="@Enter" />
-	</div>
+    <!-- Book Returns -->
+    <div id="sac-bookreturn" class="blox flex">
+        <h4>Book Returns</h4>
+        <p>Please scan the book's ISBN barcode</p>
 
-	@*Create New User*@
-	<div id="sac-create" class="blox flex">
-		<h4>Create New User</h4>
-	</div>
+        <input type="text" id="isbn-input" @onkeydown="@FilterBooks" />
 
-	@*Search for User*@
-	<div id="sac-search" class="blox flex">
-		<h4>Search Users</h4>
+        @if (!string.IsNullOrEmpty(SuccessMessage))
+        {
+            <div class="alert alert-success">@SuccessMessage</div>
+        }
+    </div>
 
-		@*Search Fields*@
-		<div id="sac-searchfields" class="flex">
-			<p>Search by...</p>
+    <!-- Create New User -->
+    <div id="sac-create" class="blox flex">
+        <h4>Create New User</h4>
+    </div>
 
-			<div id="sac-searchcard" class="flex">
-				<label id="sac-card" class="lcol">Library Card #: </label>
-				<input type="text" class="rcol" />
-			</div>
+    <!-- Search for User -->
+    <div id="sac-search" class="blox flex">
+        <h4>Search Users</h4>
 
-			<div id="sac-searchemail" class="flex">
-				<label id="sac-email" class="lcol">Email: </label>
-				<input type="text" class="rcol" />
-			</div>
-		</div>
+        <!-- Search Fields -->
+        <div id="sac-searchfields" class="flex">
+            <p>Search by...</p>
 
-		@*Search Results*@
-		<div id="sac-results" class="flex">
-			<table>
-				<thead>
-					<tr>
-						<th>Select</th>
-						<th>Library Card #</th>
-						<th>Name</th>
-						<th>Email</th>
-						<th>Phone</th>
-						<th>Balance ($)</th>
-					</tr>
-				</thead>
-				<tbody>
-					@*bleeblaabloo*@
-				</tbody>
-			</table>
-		</div>
-	</div>
+            <div id="sac-searchcard" class="flex">
+                <label id="sac-card" class="lcol">Library Card #: </label>
+                <input type="text" class="rcol" />
+            </div>
+
+            <div id="sac-searchemail" class="flex">
+                <label id="sac-email" class="lcol">Email: </label>
+                <input type="text" class="rcol" />
+            </div>
+        </div>
+
+        <!-- Search Results -->
+        <div id="sac-results" class="flex">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>Library Card #</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Balance ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- bleeblaabloo -->
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 
 @code {
-	public void Enter(KeyboardEventArgs e)
-	{
-		if (e.Code == "Enter" || e.Code == "NumpadEnter")
-		{
-			//stuff to execute for book return scan
+    private string SuccessMessage;
+    private List<Book> books = new List<Book>();
+    private List<Book> filteredBooks = new List<Book>(); // List to hold filtered books
+    private List<LoanableBook> borrowedBooks = new List<LoanableBook>();
+    private Repository database = new Repository();
+
+    private async Task FilterBooks(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            long isbn = 0;
+            if (long.TryParse(await jsRuntime.InvokeAsync<string>("eval", "document.getElementById('isbn-input').value"), out isbn))
+            {
+                // find the first loanable book with matching ISBN and remove it from borrowedBooks
+                var bookToRemove = bookService.BorrowedBooks.FirstOrDefault(b => b.Isbn == isbn);
+                if (bookToRemove != null)
+                {
+                    bookService.BorrowedBooks.Remove(bookToRemove);
+
+                    // add the book back to the database
+                    Book book = new Book(
+                        bookToRemove.ID,
+                        bookToRemove.Title,
+                        bookToRemove.AuthorFirstName,
+                        bookToRemove.AuthorLastName,
+                        bookToRemove.Isbn,
+                        bookToRemove.Location,
+                        bookToRemove.IsAvailable
+                    );
+                    database.Books.Add(book);
+                    await database.SaveChangesAsync();
+
+                    SuccessMessage = "Book successfully removed.";
+                }
+            }
+            else
+			{
+				// handle invalid input
+			}
 		}
 	}
 }
